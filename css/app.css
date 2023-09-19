@@ -35,7 +35,41 @@ a {
     --light-grey: #5a5a5a;
     --green: #adff2f;
     --light: #FFFFFF;
-  }
+}
+
+
+.container {
+    display: flex;
+}
+
+.aside {
+    width: 50px;
+    height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.player {
+    flex-shrink: 0;
+    position: sticky;
+    bottom: 0;
+}
+
+
+
+
+.button {
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0 18px;
+}
 
 
 
@@ -58,14 +92,7 @@ a {
 
 
 
-
-
-
-
-
-
-
-.debug .container {
+.debu .container {
     border: 2px solid blue;
     padding: 30px;
 }
@@ -80,7 +107,8 @@ a {
     padding: 30px;
 }
 
-.debug .footer-aside {
+.debug .player {
     border: 2px solid lightgreen;
+    background-color: black;
     padding: 30px;
 }
