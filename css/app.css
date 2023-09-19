@@ -12,7 +12,12 @@ ul,
 ol,
 menu {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+}
 
+.column-ul {
+    flex-direction: column;
 }
 
 img {
@@ -37,6 +42,19 @@ a {
     --light: #FFFFFF;
 }
 
+.color-white {
+    color: var(--light);
+}
+
+.color-light-grey {
+    color: var(--light-grey);
+}
+
+
+
+
+
+
 
 .container {
     display: flex;
@@ -44,20 +62,66 @@ a {
 
 .aside {
     width: 50px;
-    height: 100%;
+    position: relative;
 }
 
 .content {
-  flex-grow: 1;
-  height: 100vh;
-  overflow: hidden;
+    height: 100vh;
+    flex-grow: 1;
+    overflow: hidden;
 }
 
 .player {
     flex-shrink: 0;
     position: sticky;
     bottom: 0;
+    padding: 20px;
 }
+
+.player-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.playing-now {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.song-title {
+    font-size: 20px;
+}
+.sinister {
+    max-width: 42px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,7 +144,15 @@ a {
 
 
 
+@media (min-width: 576px) {}
 
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
 
 
 
@@ -109,6 +181,5 @@ a {
 
 .debug .player {
     border: 2px solid lightgreen;
-    background-color: black;
-    padding: 30px;
+    background-color: var(--grey);
 }
