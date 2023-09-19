@@ -25,3 +25,62 @@ a {
     color: currentColor;
     display: inline-block;
 }
+
+
+:root {
+    --dark: #000000;
+    --dark-grey: #080b12;
+    --grey-blue: #141922;
+    --grey: #282828;
+    --light-grey: #5a5a5a;
+    --green: #adff2f;
+    --light: #FFFFFF;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.debug .container {
+    border: 2px solid blue;
+    padding: 30px;
+}
+
+.debug .aside {
+    border: 2px solid red;
+    padding: 30px;
+}
+
+.debug .content {
+    border: 2px solid orange;
+    padding: 30px;
+}
+
+.debug .footer-aside {
+    border: 2px solid lightgreen;
+    padding: 30px;
+}
