@@ -65,6 +65,14 @@ a {
     align-items: center;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
 
 
 
@@ -101,12 +109,12 @@ a {
     justify-content: space-between;
 }
 
-.track {
+.track-player {
     width: 50%;
 }
 
 .album,
-.controls {
+.track-controls {
     width: 230px;
 }
 
@@ -117,7 +125,7 @@ a {
 
 .album__cover {
     width: 28px;
-    
+
 }
 
 .album__specs {
@@ -130,7 +138,15 @@ a {
     flex-wrap: wrap;
 }
 
+.track-player .controls {
+    gap: 20px;
+    font-size: 22px;
+}
 
+.control-play {
+    font-size: 30px;
+    margin: 0 20px;
+}
 
 
 
@@ -184,16 +200,15 @@ a {
     }
 
     .album,
-    .controls {
+    .track-controls {
         max-width: 230px;
     }
 
     .album__cover {
         width: 42px;
     }
-    .album__controls {
-       
-    }
+
+    .album__controls {}
 
 }
 
@@ -220,7 +235,7 @@ a {
 
 .debug .app__sidebar {
     border: 2px solid red;
-    
+
 }
 
 .debug .app__content {
@@ -235,5 +250,5 @@ a {
 
 .debug .app__player>* {
     border: 2px solid yellow;
-    
+
 }
