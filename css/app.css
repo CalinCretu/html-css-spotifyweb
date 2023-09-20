@@ -73,6 +73,9 @@ a {
     justify-content: center;
 }
 
+.grow-1 {
+    flex-grow: 1;
+}
 
 
 
@@ -133,9 +136,14 @@ a {
     gap: 10px;
 }
 
+.album__track-name{
+    color: var(--light-grey);
+}
+
 .album__controls {
     gap: 10px;
     flex-wrap: wrap;
+    color: var(--light-grey);
 }
 
 .track-player .controls {
@@ -148,40 +156,65 @@ a {
     margin: 0 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.button {
-    color: black;
-    line-height: 40px;
-    text-align: center;
-    background-color: white;
-    border-radius: 20px;
-    padding: 0 18px;
+.track-timeline {
+    gap: 14px;
 }
+
+.progress-bar {
+    height: 4px;
+    background-color: var(--light-grey);
+    border-radius: 999px;
+    position: relative
+}
+
+.progress {
+    height: 6px;
+    background-color: white;
+    width: 25%;
+}
+
+.progress-handler {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 999px;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.progress-bar:hover .progress-handler {
+    display: block;
+}
+
+.progress-bar:hover .progress {
+    background-color: var(--green);
+}
+
+.track-controls {
+    gap: 20px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -206,6 +239,10 @@ a {
 
     .album__cover {
         width: 42px;
+    }
+
+    .track-timeline {
+        gap: 24px;
     }
 
     .album__controls {}
@@ -243,12 +280,12 @@ a {
     padding: 30px;
 }
 
-.debug .app__player {
+.debu .app__player {
     border: 2px solid lightgreen;
     background-color: var(--grey);
 }
 
-.debug .app__player>* {
+.debu .app__player>* {
     border: 2px solid yellow;
 
 }
