@@ -8,6 +8,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+html{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
 ul,
 ol,
 menu {
@@ -30,6 +35,8 @@ a {
     color: currentColor;
     display: inline-block;
 }
+
+
 
 
 :root {
@@ -55,27 +62,32 @@ a {
 
 
 
+.app {
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    flex-grow: 1;
+    background-color: red;
+}
 
 .container {
-    display: flex;
+    display:flex;
+    overflow: hidden;
+    flex-grow: 1;
 }
 
 .aside {
     width: 50px;
-    position: relative;
-}
-
-.content {
-    height: 100vh;
-    flex-grow: 1;
     overflow: hidden;
 }
 
+.content {
+    flex-grow: 1;
+}
+
 .player {
-    flex-shrink: 0;
-    position: sticky;
-    bottom: 0;
-    padding: 20px;
+   overflow: hidden;
 }
 
 .player-container {
