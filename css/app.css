@@ -57,6 +57,14 @@ a {
     color: var(--light-grey);
 }
 
+.opacity-light {
+    filter: opacity(80%);
+}
+
+.opacity-heavy {
+    filter: opacity(40%);
+}
+
 .flex {
     display: flex;
 }
@@ -76,6 +84,30 @@ a {
 .grow-1 {
     flex-grow: 1;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.border-left {
+    border-left: 3px solid var(--green);
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -136,8 +168,8 @@ a {
     gap: 10px;
 }
 
-.album__track-name{
-    color: var(--light-grey);
+.album__track-name {
+    color: var(--light);
 }
 
 .album__controls {
@@ -199,11 +231,29 @@ a {
     font-size: 18px;
 }
 
+/* app-sidebar */
 
+.logo-bar {
+    padding: 8px;
+}
 
+.logo {
+    max-width: 70%;
+}
 
+.cta-icons {
+    max-width: 14%;
+}
 
+.menu {
+    margin-top: 15px;
+}
 
+.menu__options {
+    gap: 10px;
+    margin: 8px 0;
+    padding: 8px;
+}
 
 
 
@@ -270,12 +320,12 @@ a {
     padding: 30px;
 }
 
-.debug .app__sidebar {
+.debu .app__sidebar {
     border: 2px solid red;
 
 }
 
-.debug .app__content {
+.debu .app__content {
     border: 2px solid orange;
     padding: 30px;
 }
@@ -288,4 +338,8 @@ a {
 .debu .app__player>* {
     border: 2px solid yellow;
 
+}
+
+.debu .menu {
+    border: 2px solid tomato;
 }
