@@ -8,7 +8,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-html{
+
+
+/* utilities */
+html {
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -36,9 +39,6 @@ a {
     display: inline-block;
 }
 
-
-
-
 :root {
     --dark: #000000;
     --dark-grey: #080b12;
@@ -57,67 +57,87 @@ a {
     color: var(--light-grey);
 }
 
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
 
 
 
 
+/* app */
 
 .app {
     flex-direction: column;
-    display: flex;
     height: 100vh;
     overflow: hidden;
-    flex-grow: 1;
     background-color: red;
 }
 
-.container {
-    display:flex;
+.app__container {
     overflow: hidden;
     flex-grow: 1;
 }
 
-.aside {
+.app__sidebar {
     width: 50px;
+    flex-shrink: 0;
     overflow: hidden;
+    background-color: var(--dark);
 }
 
-.content {
+.app__content {
     flex-grow: 1;
+    background-color: var(--grey-blue);
 }
 
-.player {
-   overflow: hidden;
-}
-
-.player-container {
-    display: flex;
-    flex-direction: row;
+.app__player {
+    overflow: hidden;
+    background-color: var(--grey);
+    min-height: 90px;
     justify-content: space-between;
 }
 
-.playing-now {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.track {
+    width: 50%;
+}
+
+.album,
+.controls {
+    width: 230px;
+}
+
+.album {
+    padding: 0 10px;
+    gap: 20px;
+}
+
+.album__cover {
+    width: 28px;
     
 }
 
-
-
-
-
-
-
-
-
-
-.song-title {
-    font-size: 20px;
+.album__specs {
+    flex-grow: 1;
+    gap: 10px;
 }
-.sinister {
-    max-width: 42px;
+
+.album__controls {
+    gap: 10px;
+    flex-wrap: wrap;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -158,7 +178,24 @@ a {
 
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .app__sidebar {
+        width: 230px;
+    }
+
+    .album,
+    .controls {
+        max-width: 230px;
+    }
+
+    .album__cover {
+        width: 42px;
+    }
+    .album__controls {
+       
+    }
+
+}
 
 @media (min-width: 992px) {}
 
@@ -176,22 +213,27 @@ a {
 
 
 
-.debu .container {
+.debu .app__container {
     border: 2px solid blue;
     padding: 30px;
 }
 
-.debug .aside {
+.debug .app__sidebar {
     border: 2px solid red;
-    padding: 30px;
+    
 }
 
-.debug .content {
+.debug .app__content {
     border: 2px solid orange;
     padding: 30px;
 }
 
-.debug .player {
+.debug .app__player {
     border: 2px solid lightgreen;
     background-color: var(--grey);
+}
+
+.debug .app__player>* {
+    border: 2px solid yellow;
+    
 }
