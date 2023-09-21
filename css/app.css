@@ -369,10 +369,19 @@ a {
     font-weight: bold;
 }
 
+.app__main {
+    margin-top: 120px;
+}
 
+.top-nav-bar {
+    gap: 20px;
+   flex-wrap: wrap;
+}
 
-
-
+.top-nav-bar > li{
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 
 
@@ -495,8 +504,8 @@ a {
     border: 2px solid tomato;
 }
 
-.debug .app__albums {
-    padding: 60px;
+.debu .app__albums {
+    
     border: 2px solid cornflowerblue;
 }
 
