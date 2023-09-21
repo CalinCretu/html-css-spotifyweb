@@ -193,7 +193,6 @@ a {
 }
 
 .progress-bar {
-    height: 4px;
     background-color: var(--light-grey);
     border-radius: 999px;
     position: relative
@@ -257,6 +256,7 @@ a {
 
 .playlist {
     padding: 10px;
+    flex-grow: 1;
 }
 
 .add-button {
