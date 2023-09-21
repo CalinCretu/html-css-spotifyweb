@@ -339,17 +339,69 @@ a {
 }
 
 
+
+
+
+/* app-content */
+
+
 .app__content {
     position: relative;
 
 }
 
 .app__upgrade {
+    padding: 15px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: var(--dark-grey);
+    justify-content: flex-end;
 }
+
+.upgrade {
+    border: 2px solid white;
+    border-radius: 999px;
+    padding: 10px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -448,7 +500,7 @@ a {
     border: 2px solid cornflowerblue;
 }
 
-.debug .app__upgrade {
+.debu .app__upgrade {
     padding: 20px;
     border: 2px dashed tomato;
 }
