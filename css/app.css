@@ -89,14 +89,15 @@ a {
     font-weight: bold;
 }
 
-.border-left {
-    border-left: 3px solid var(--green);
-}
+
 
 .column {
     flex-direction: column;
 }
 
+.display-none {
+    display: none;
+}
 
 
 
@@ -117,7 +118,7 @@ a {
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
-    background-color: red;
+    background-color: black;
 }
 
 .app__container {
@@ -154,7 +155,7 @@ a {
 }
 
 .album {
-    padding: 0 10px;
+
     gap: 20px;
 }
 
@@ -226,37 +227,45 @@ a {
 
 .track-controls {
     gap: 20px;
-    padding: 0 10px;
+
     font-size: 18px;
 }
 
 /* app-sidebar */
 
-.logo-bar {
-    padding: 8px;
+.app__sidebar {}
+
+.logo-bar {}
+
+.logo-lg {
+    max-width: 200px;
+    display: none;
+    margin: 10px 10px;
 }
 
-.logo {
-    max-width: 70%;
+.logo-sm {
+    max-width: 40px;
+    margin: 10px 10px;
 }
 
 .cta-icons {
-    max-width: 14%;
+    max-width: 25px;
 }
 
 .menu {
     margin-top: 15px;
+    margin-bottom: 15px;
+
 }
 
 .menu__options {
     gap: 10px;
-    margin: 8px 0;
-    padding: 10px;
+    margin: 8px 10px;
+    position: relative;
 }
 
 .playlist {
-    padding: 10px;
-    flex-grow: 1;
+    display: none;
 }
 
 .add-button {
@@ -276,16 +285,19 @@ a {
 
 .playlist_content {
     gap: 20px;
+    margin: 0 10px;
 }
 
 .account {
-    padding: 10px;
-    
+    margin-top: auto;
+
 }
+
 .install-app {
     padding-bottom: 15px;
     gap: 10px;
     border-bottom: 1px solid white;
+    margin: 0 10px;
 }
 
 .install {
@@ -304,13 +316,40 @@ a {
 
 .profile {
     gap: 10px;
-    margin-top: 20px;
+    margin: 20px 10px;
+}
+
+.main-nav-cta {
+    display: none;
+}
+
+.account__text {
+    display: none;
+}
+
+.home-button.menu__options.flex.items-center::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 2px;
+    background-color: var(--green);
+    top: 0;
+    left: -10px;
 }
 
 
+.app__content {
+    position: relative;
 
+}
 
-
+.app__upgrade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 
 
@@ -334,8 +373,29 @@ a {
         gap: 24px;
     }
 
-    .album__controls {}
+    .logo-lg {
+        display: block;
+    }
 
+    .logo-sm {
+        display: none;
+    }
+
+    .main-nav-cta {
+        display: block;
+    }
+
+    .playlist {
+        display: block;
+    }
+
+    .account__text {
+        display: block;
+    }
+
+    .cta-icons {
+        max-width: 40px;
+    }
 }
 
 @media (min-width: 992px) {}
@@ -381,4 +441,14 @@ a {
 
 .debu .menu {
     border: 2px solid tomato;
+}
+
+.debug .app__albums {
+    padding: 60px;
+    border: 2px solid cornflowerblue;
+}
+
+.debug .app__upgrade {
+    padding: 20px;
+    border: 2px dashed tomato;
 }
