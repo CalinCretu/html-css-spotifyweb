@@ -99,8 +99,17 @@ a {
     display: none;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
 
+.flex-row {
+    flex-direction: row;
+}
 
+.col-2 > img {
+    width: 178px;
+}
 
 
 
@@ -232,8 +241,6 @@ a {
 }
 
 /* app-sidebar */
-
-.app__sidebar {}
 
 .logo-bar {}
 
@@ -370,7 +377,7 @@ a {
 }
 
 .app__main {
-    margin-top: 120px;
+    margin-top: 140px;
 }
 
 .top-nav-bar {
@@ -383,7 +390,22 @@ a {
     text-transform: uppercase;
 }
 
+.title-container {
+    padding: 0 40px;
+    margin-top: 40px;
+}
 
+.album-container {
+    margin-top: 20px;
+}
+
+.col-2 {
+	flex-basis: calc((100% / 12) * 2);
+}
+
+.col-12 {
+    flex-basis: 100%;
+}
 
 
 
