@@ -107,7 +107,7 @@ a {
     flex-direction: row;
 }
 
-.col-2 > img {
+.col-2>img {
     width: 178px;
 }
 
@@ -124,25 +124,25 @@ a {
 /* app */
 
 .app {
-    flex-direction: column;
     height: 100vh;
     overflow: hidden;
     background-color: black;
 }
 
 .app__container {
-    overflow: hidden;
     flex-grow: 1;
+    overflow: hidden;
 }
 
 .app__sidebar {
     width: 50px;
     flex-shrink: 0;
-    overflow: hidden;
+
     background-color: var(--dark);
 }
 
 .app__content {
+    overflow: auto;
     flex-grow: 1;
     background-color: var(--grey-blue);
 }
@@ -242,7 +242,7 @@ a {
 
 /* app-sidebar */
 
-.logo-bar {}
+
 
 .logo-lg {
     max-width: 200px;
@@ -354,7 +354,7 @@ a {
 
 .app__content {
     position: relative;
-
+    overflow: auto;
 }
 
 .app__upgrade {
@@ -382,10 +382,10 @@ a {
 
 .top-nav-bar {
     gap: 20px;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.top-nav-bar > li{
+.top-nav-bar>li {
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -400,7 +400,7 @@ a {
 }
 
 .col-2 {
-	flex-basis: calc((100% / 12) * 2);
+    flex-basis: calc((100% / 12) * 2);
 }
 
 .col-12 {
@@ -527,7 +527,7 @@ a {
 }
 
 .debu .app__albums {
-    
+
     border: 2px solid cornflowerblue;
 }
 

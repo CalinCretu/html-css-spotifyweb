@@ -16,7 +16,7 @@
 </head>
 
 <body class="debug">
-  <div class="app flex">
+  <div class="app flex column">
     <div class="app__container flex">
       <div class="app__sidebar flex column">
 
@@ -81,7 +81,7 @@
 
       </div>
 
-      <div class="app__content flex column">
+      <div class="app__content">
 
         <div class="app__upgrade flex">
           <div class="upgrade"><a href="#">Effettua L'Upgrade</a></div>
@@ -184,61 +184,61 @@
     </div>
 
 
-  </div>
 
 
-  <aside class="app__player justify-between items-center flex">
-    <div class="album flex items-center">
-      <div class="album__specs flex items-center">
-        <img class="album__cover" src="img/sinister.jpeg" alt="">
-        <div>
-          <h4 class="album__author ">Sinister</h4>
-          <p class="album__track-name opacity-heavy">Nome Brano</p>
+
+    <aside class="app__player justify-between items-center flex">
+      <div class="album flex items-center">
+        <div class="album__specs flex items-center">
+          <img class="album__cover" src="img/sinister.jpeg" alt="">
+          <div>
+            <h4 class="album__author ">Sinister</h4>
+            <p class="album__track-name opacity-heavy">Nome Brano</p>
+          </div>
+        </div>
+        <ul class="album__controls flex">
+          <li class="control-icon"><i class="fa-regular fa-heart"></i></li>
+          <li class="control-icon"><i class="fa-regular fa-folder"></i></li>
+        </ul>
+      </div>
+
+
+      <div class="track-player">
+        <ul class="controls flex items-center justify-center">
+          <li class="control-icon"><i class="fa-solid fa-shuffle"></i></li>
+          <li class="control-icon"><i class="fa-solid fa-backward-step"></i></li>
+          <li class="control-icon control-play"><i class="fa-regular fa-circle-play"></i></li>
+          <li class="control-icon"><i class="fa-solid fa-forward-step"></i></li>
+          <li class="control-icon"><i class="fa-solid fa-arrow-rotate-right"></i></li>
+        </ul>
+
+        <div class="track-timeline flex justify-between items-center">
+          <div class="time">
+            0:25
+          </div>
+          <div class="progress-bar grow-1">
+            <div class="progress"></div>
+            <div class="progress-handler"></div>
+          </div>
+          <div class="time">
+            4:35
+          </div>
         </div>
       </div>
-      <ul class="album__controls flex">
-        <li class="control-icon"><i class="fa-regular fa-heart"></i></li>
-        <li class="control-icon"><i class="fa-regular fa-folder"></i></li>
-      </ul>
-    </div>
 
 
-    <div class="track-player">
-      <ul class="controls flex items-center justify-center">
-        <li class="control-icon"><i class="fa-solid fa-shuffle"></i></li>
-        <li class="control-icon"><i class="fa-solid fa-backward-step"></i></li>
-        <li class="control-icon control-play"><i class="fa-regular fa-circle-play"></i></li>
-        <li class="control-icon"><i class="fa-solid fa-forward-step"></i></li>
-        <li class="control-icon"><i class="fa-solid fa-arrow-rotate-right"></i></li>
-      </ul>
+      <ul class="track-controls flex items-center">
+        <li class="control-icon"><i class="fa-solid fa-list-ul"></i></li>
+        <li class="control-icon"><i class="fa-solid fa-display"></i></li>
+        <li class="control-icon"><i class="fa-solid fa-volume-low"></i></li>
 
-      <div class="track-timeline flex justify-between items-center">
-        <div class="time">
-          0:25
-        </div>
-        <div class="progress-bar grow-1">
+        <li class="progress-bar grow-1">
           <div class="progress"></div>
           <div class="progress-handler"></div>
-        </div>
-        <div class="time">
-          4:35
-        </div>
-      </div>
-    </div>
+        </li>
 
-
-    <ul class="track-controls flex items-center">
-      <li class="control-icon"><i class="fa-solid fa-list-ul"></i></li>
-      <li class="control-icon"><i class="fa-solid fa-display"></i></li>
-      <li class="control-icon"><i class="fa-solid fa-volume-low"></i></li>
-
-      <li class="progress-bar grow-1">
-        <div class="progress"></div>
-        <div class="progress-handler"></div>
-      </li>
-
-    </ul>
-  </aside>
+      </ul>
+    </aside>
   </div>
 </body>
 
