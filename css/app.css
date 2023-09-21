@@ -107,9 +107,6 @@ a {
     flex-direction: row;
 }
 
-.col-2>img {
-    width: 178px;
-}
 
 
 
@@ -148,6 +145,7 @@ a {
 }
 
 .app__player {
+    padding: 0 10px;
     overflow: hidden;
     background-color: var(--grey);
     min-height: 90px;
@@ -247,7 +245,8 @@ a {
 .logo-lg {
     max-width: 200px;
     display: none;
-    margin: 10px 10px;
+    margin: 5px 5px;
+    padding: 10px;
 }
 
 .logo-sm {
@@ -386,7 +385,7 @@ a {
 }
 
 .top-nav-bar>li {
-    font-weight: bold;
+    
     text-transform: uppercase;
 }
 
@@ -397,6 +396,9 @@ a {
 
 .album-container {
     margin-top: 20px;
+    gap: 24px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .col-2 {
@@ -407,9 +409,28 @@ a {
     flex-basis: 100%;
 }
 
+.col-2>img {
+    max-width: 178px;
+    
+}
 
+.album-name {
+    font-size: 15px;
+    margin: 10px 0;
+}
 
+.album-subtitle {
+    font-size: 12px;
+    
+}
 
+.playlist-description {
+    font-size: 14px;
+}
+
+.circle {
+    border-radius: 999px;
+}
 
 
 
